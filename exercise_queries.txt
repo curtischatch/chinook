@@ -1,8 +1,12 @@
 Find the albums recorded by the artist Queen.
+album.where(artist_id:Artist.find_by(name:"Queen").id)
+
 
 Count how many tracks belong to the media type "Protected MPEG-4 video file".
+track.where(media_type_id: MediaType.find_by(name:"Proteced MPEG-4 video file")).count
 
 Find the genre with the name "Hip Hop/Rap".
+Genre.find_by(name: "Hip Hop/Rap")
 
 Count how many tracks belong to the "Hip Hop/Rap" genre
 
